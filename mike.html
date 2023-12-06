@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<Title>mike</Title>
+<style>
+button {background: linear-gradient(45deg, #00FF00, #FF8040);
+	}
+@keyframes In {
+	from {width : 60px; height 35px;};
+	to {width : 100px; height : 50px;};
+}
+button:hover {
+	height: 50px;
+	width: 100px;
+	animation-name : In;
+	animation-duration : 1.5s;
+	}
+</style>
+</head>
+<body>
+	<button class="mike">DISSAPEAR</button>
+<div class="mikeText">
+	Mike2
+</div>
+
+
+<script>
+	$(document).ready(function(){
+		$(".mike").click(function(){
+			$(".mikeText").slideToggle();
+		});
+	});
+</script>
+</body>
+</html>
